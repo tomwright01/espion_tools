@@ -4,8 +4,8 @@ Code to parse an espion VEP export file
 
 import logging
 import codecs
-from espion_objects import TimeSeries, Result, StepChannel, Step, FileError
-from utils import as_int, as_float, parse_dateTimeStamp, parse_dateStamp
+from .espion_objects import TimeSeries, Result, StepChannel, Step, FileError
+from .utils import as_int, as_float, parse_dateTimeStamp, parse_dateStamp
 logger = logging.getLogger(__name__)
 
 
@@ -380,4 +380,5 @@ def read_export_file(filepath, sep='\t'):
 if __name__ == '__main__':
     logging.basicConfig(level=logging.DEBUG)
     filepath = "../../samples/erg_protocol_1.2_version_6.64.14.txt"
+    filepath = "../../samples/erg_protocol_1.2_version_6.0.56.txt"
     read_export_file(filepath)

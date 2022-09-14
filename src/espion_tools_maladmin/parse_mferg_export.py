@@ -4,8 +4,8 @@ Code to parse an espion mferg export file
 from datetime import datetime
 import logging
 import re
-from espion_objects import TimeSeries, FileError, Hexagon
-from utils import as_int, as_float, read_split_line, find_section_col
+from .espion_objects import TimeSeries, FileError, Hexagon
+from .utils import as_int, as_float, read_split_line, find_section_col
 
 logger = logging.getLogger(__name__)
 

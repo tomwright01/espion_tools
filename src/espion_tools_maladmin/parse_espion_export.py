@@ -2,9 +2,9 @@
 """
 Code to parse an espion export file
 """
-from exceptions import EspionExportError
-from parse_vep_export import read_export_file
-from parse_mferg_export import read_mferg_export_file
+from .exceptions import EspionExportError
+from .parse_vep_export import read_export_file
+from .parse_mferg_export import read_mferg_export_file
 import logging
 import codecs
 
