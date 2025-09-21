@@ -54,6 +54,8 @@ def find_type(fpath):
                         test_type = 'vep'
                     elif test_type == 'ERG Test':
                         test_type = 'erg'
+                    elif test_type == 'EOG Test':
+                        test_type = 'eog'
                     else:
                         raise EspionExportError('Test type:{} is not recognised'
                                                 .format(test_type))

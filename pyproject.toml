@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "espion_tools_maladmin"
-version = "0.0.4"
+name = "espion_tools"
+version = "0.0.6"
 authors = [
   { name="Tom Wright", email="tom@maladmin.com" },
 ]
